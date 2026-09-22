@@ -51,7 +51,14 @@
   }
   .card:hover { border-color: rgba(79,140,255,.4); transform: translateY(-4px); }
   .card h3 { font-size: 18px; margin-bottom: 8px; }
-  .card p { color: #94a3b8; font-size: 14px; line-height: 1.5; }
+    .card p { color: #94a3b8; font-size: 14px; line-height: 1.5; }
+    .card .price { font-size: 20px; font-weight: 700; color: #e2e8f0; margin: 12px 0; }
+    .card .buy {
+      display: inline-block; padding: 10px 20px; border-radius: 8px;
+      background: #4f8cff; color: #fff; text-decoration: none; font-weight: 600; font-size: 14px;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .card .buy:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(79,140,255,.35); }
   footer { text-align: center; padding: 40px; color: #64748b; font-size: 13px; }
 </style>
 </head>
@@ -79,9 +86,22 @@
 <section class="products" id="products">
   <h2>Products</h2>
   <div class="grid">
-    <div class="card"><h3>Coming soon</h3><p>Our first release is in the works. Sign up to be the first to know.</p></div>
-    <div class="card"><h3>Coming soon</h3><p>More tools and templates on the way.</p></div>
-    <div class="card"><h3>Coming soon</h3><p>Ebooks and guides for builders and operators.</p></div>
+    <div class="card">
+      <h3>AI Prompt Cost &amp; Pricing Calculator</h3>
+      <p>Know what your AI usage really costs. CLI + library that prices tokens, API calls, and GPU hours across 7 models.</p>
+      <p class="price">$19.00</p>
+      <a class="buy" href="https://buy.stripe.com/5kQcN4gD96CZgUV5EjaVa02" target="_blank" rel="noopener">Buy now</a>
+    </div>
+    <div class="card">
+      <h3>Prompt Cost Auditor</h3>
+      <p>Audit and classify your prompt costs — human CLI + bot API rail. Published on Gumroad.</p>
+      <p class="price">$19.00</p>
+      <a class="buy" href="https://cgeis.gumroad.com/l/noupph" target="_blank" rel="noopener">Buy on Gumroad</a>
+    </div>
+    <div class="card">
+      <h3>More coming</h3>
+      <p>New tools and templates on the way. Check back soon.</p>
+    </div>
   </div>
 </section>
 <footer id="contact">
